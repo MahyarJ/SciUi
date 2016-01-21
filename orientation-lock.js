@@ -1,0 +1,1 @@
+lockedAllowed = window.screen.lockOrientation('portrait-primary');

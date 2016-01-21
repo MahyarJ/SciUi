@@ -114,6 +114,33 @@ body {
     height: 200px !important; }
   .draggable-box#s3 {
     height: 350px !important; }
+  .draggable-box .non-draggable {
+    position: relative;
+    float: right;
+    right: 0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
+    margin: 5px 10px;
+    background-color: white;
+    box-shadow: 0 0 5px #DDD;
+    transition: all .3s;
+    opacity: .7; }
+    .draggable-box .non-draggable#egg {
+      background: url(files/images/gallery/egg.jpg) white center center;
+      background-size: cover; }
+    .draggable-box .non-draggable#chfire {
+      background: url(files/images/gallery/fire.jpg) white center center;
+      background-size: cover; }
+    .draggable-box .non-draggable#phfire {
+      background: url(files/images/gallery/fire.jpg) white center center;
+      background-size: cover; }
+    .draggable-box .non-draggable#water {
+      background: url(files/images/gallery/water.jpg) white center center;
+      background-size: cover; }
   .draggable-box .draggable {
     position: relative;
     float: right;
@@ -130,7 +157,10 @@ body {
     .draggable-box .draggable#egg {
       background: url(files/images/gallery/egg.jpg) white center center;
       background-size: cover; }
-    .draggable-box .draggable#fire {
+    .draggable-box .draggable#phfire {
+      background: url(files/images/gallery/fire.jpg) white center center;
+      background-size: cover; }
+    .draggable-box .draggable#chfire {
       background: url(files/images/gallery/fire.jpg) white center center;
       background-size: cover; }
     .draggable-box .draggable#water {
@@ -154,7 +184,12 @@ body {
   .drop-zone#chemical {
     right: -40px;
     margin-top: 200px; }
-  .drop-zone#oven {
+  .drop-zone#phoven {
+    right: -40px;
+    width: 110vw;
+    height: 120px;
+    margin-top: 100px; }
+  .drop-zone#choven {
     right: -40px;
     width: 110vw;
     height: 120px;

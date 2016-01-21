@@ -119,7 +119,7 @@ interact('.draggable').draggable({
   }
 });
 
-interact('.drop-zone#oven').dropzone({
+interact('.drop-zone#choven, .drop-zone#phoven').dropzone({
   accept: '.draggable',
   overlap: 0.75,
   ondropactivate: function(event) {
@@ -141,6 +141,14 @@ interact('.drop-zone#oven').dropzone({
     return console.log('Dragged Out');
   },
   ondrop: function(event) {
+    var draggableElement, dropzoneElement;
+    dropzoneElement = event.target;
+    draggableElement = event.relatedTarget;
+    draggableElement.classList.remove('draggable');
+    draggableElement.classList.add('non-draggable');
+    if (dropzoneElement.parentNode.querySelectorAll('.draggable').length === 0) {
+      dropzoneElement.innerHTML = 'ترکیب انجام شد';
+    }
     return console.log('Dropped');
   },
   ondropdeactivate: function(event) {
