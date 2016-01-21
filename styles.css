@@ -84,6 +84,8 @@
   font-weight: bold; }
   .slide-title#final-score {
     font-size: 72; }
+  .slide-title.final-result {
+    opacity: 0; }
 
 .slide-text {
   position: relative;

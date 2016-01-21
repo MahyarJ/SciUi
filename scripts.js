@@ -148,6 +148,7 @@ interact('.drop-zone#choven, .drop-zone#phoven').dropzone({
     draggableElement.classList.add('non-draggable');
     if (dropzoneElement.parentNode.querySelectorAll('.draggable').length === 0) {
       dropzoneElement.innerHTML = 'ترکیب انجام شد';
+      dropzoneElement.parentNode.parentNode.querySelector('.final-result').style.opacity = 1;
     }
     return console.log('Dropped');
   },
